@@ -1,0 +1,166 @@
+/* Reset básico de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Contenedor general para centrar los contenidos */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para el encabezado */
+header {
+    background: #ff9f00;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Estilo de la sección de bienvenida */
+.intro {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    color: #ff9f00;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.intro img {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Estilo de los productos avícolas */
+.productos {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.productos h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ff9f00;
+    margin-bottom: 30px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.producto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto img:hover {
+    transform: scale(1.05);
+}
+
+.producto h3 {
+    font-size: 1.8rem;
+    margin-top: 15px;
+    color: #ff9f00;
+}
+
+.producto p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Sección de bienestar animal */
+.bienestar {
+    padding: 40px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.bienestar h2 {
+    font-size: 2.5rem;
+    color: #ff9f00;
+    margin-bottom: 20px;
+}
+
+.bienestar p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.bienestar img {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+/* Estilo del pie de página */
+footer {
+    background: #ff9f00;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .productos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+}
